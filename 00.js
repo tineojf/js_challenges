@@ -13,3 +13,11 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
+let multiplo_3 = 'fizz';
+let multiplo_5 = 'buzz'
+let multiplo_15 = multiplo_3 + ' ' + multiplo_5;
+
+for (let i = 1; i <= 100; i++) {
+  console.log(`${i} - ${i % 15 == 0 ? multiplo_15 : i % 3 == 0 ? multiplo_3 : i % 5 == 0 ? multiplo_5 : ""
+    }`)
+}
